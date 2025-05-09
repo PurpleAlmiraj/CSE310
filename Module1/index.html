@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Complex HTML Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Complex Page</h1>
+    <button id="theme-toggle" class="dark-mode">Toggle Theme</button>
+    <nav>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#" onclick="openModal()">Open Modal</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><button id="styles-btn" class="styles-btn">Styles</button></li>
+        </ul>
+        
+        <button id="hamburger" class="hamburger" aria-label="Toggle navigation">
+          &#9776;
+        </button>
+      </nav>
+
+<div id="styles-panel" class="dark-mode" style="display: none;">
+    <label for="bg-color">Background Color:</label>
+    <input type="color" id="bg-color" value="#ffffff">
+  
+    <label for="font-family">Font Family:</label>
+    <select id="font-family">
+      <option value="Arial, sans-serif">Arial</option>
+      <option value="Verdana, Geneva, sans-serif">Verdana</option>
+      <option value="Times New Roman, serif">Times New Roman</option>
+    </select>
+  
+    <label for="font-color">Font Color:</label>
+    <input type="color" id="font-color" value="#000000">
+  
+    <label for="font-size">Font Size:</label>
+    <select id="font-size">
+      <option value="14px">Small</option>
+      <option value="16px" selected>Medium</option>
+      <option value="18px">Large</option>
+      <option value="20px">Extra Large</option>
+    </select>
+  
+    <button id="apply-styles">Apply Styles</button>
+    <button id="reset-styles">Reset Styles</button>
+  </div>
+  
+      
+  </header>
+
+  <main>
+    <h2>Live Clock</h2>
+    <div id="clock"></div>
+
+    <h2>Search Filter</h2>
+    <input type="text" id="searchInput" placeholder="Search items..." />
+    <ul id="itemList">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+      <li>Watermelon</li>
+      <li>Grapes</li>
+    </ul>
+
+    <h2>Contact Form</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <button type="submit">Submit</button>
+      <p id="formMessage" class="hidden"></p>
+    </form>
+  </main>
+
+  <div id="modal">
+    <div id="modal-content">
+      <h3>Modal Window</h3>
+      <p>This is a modal. Click outside to close.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Complex Page</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
